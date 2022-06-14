@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* Layout */
+  --mobile-w: 375px;
+  --desktop-w: 1440px;
+
+  /* Colors */
+  --primary-1: hsl(31, 77%, 52%);
+  --primary-2: hsl(184, 100%, 22%);
+  --primary-3: hsl(179, 100%, 13%);
+  --text-color: hsla(0, 0%, 100%, 0.75);
+  --neutral: hsl(0, 0%, 95%);
+  /* Fonts */
+  --lex: "Lexend Deca", sans-serif;
+  --big: "Big Shoulders Display", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: var(--mobile-w);
+  font-size: 15px;
+  font-family: var(--lex);
+  background: var(--neutral);
+  color: var(--text-color);
+  line-height: 1.7;
+}
+header nav {
+  text-align: center;
+}
+nav a,
+nav a:link {
+  text-decoration: none;
+  color: var(--primary-3);
+  padding: 10px;
+  background: var(--primary-1);
+  border-radius: 0 0 10px 10px;
+}
+nav a:hover,
+nav a:active,
+nav a:focus {
+  color: var(--primary-3);
+  background: transparent;
+  border: 2px solid var(--primary-1);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.card {
+  width: 80%;
+  padding: 40px;
+  height: 400px;
+}
+.card h2 {
+  font-family: var(--big);
+  color: var(--neutral);
+  padding: 15px 0;
+  font-size: 2.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+}
+.card button {
+  outline: none;
+  font-size: 1rem;
+  background: var(--neutral);
+  border: none;
+  padding: 10px 30px 5px;
+  border-radius: 25px;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-top: 65px;
+}
+.card button:hover {
+  background: transparent;
+  color: var(--neutral) !important;
+  border: 2px solid var(--neutral);
+}
+.card.sedans {
+  background: var(--primary-1);
+  border-radius: 5px 5px 0 0;
+}
+.card.suvs {
+  background: var(--primary-2);
+}
+.card.luxury {
+  background: var(--primary-3);
+  border-radius: 0 0 5px 5px;
+}
+.card.sedans button {
+  color: var(--primary-1);
+}
+.card.suvs button {
+  color: var(--primary-2);
+}
+.card.luxury button {
+  color: var(--primary-3);
+}
+@media (min-width: 700px) {
+  body {
+    width: 100%;
+  }
+  main {
+    height: 100vh;
+    flex-direction: row;
+    margin-top: 0;
+  }
+  .card {
+    width: 18%;
+    height: min-height;
+  }
+  .card.sedans {
+    border-radius: 10px 0 0 10px;
+  }
+  .card.luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
