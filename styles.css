@@ -22,7 +22,7 @@
   padding: 0;
 }
 body {
-  width: var(--mobile-w);
+  width: 100%;
   font-size: 15px;
   font-family: var(--lex);
   background: var(--neutral);
@@ -62,8 +62,8 @@ main {
 .card h2 {
   font-family: var(--big);
   color: var(--neutral);
-  padding: 15px 0;
-  font-size: 2.5rem;
+  padding: 10px 0;
+  font-size: 2rem;
 }
 
 .card p {
@@ -78,7 +78,7 @@ main {
   border-radius: 25px;
   vertical-align: middle;
   cursor: pointer;
-  margin-top: 65px;
+  margin-top: 70px;
 }
 .card button:hover {
   background: transparent;
@@ -105,7 +105,22 @@ main {
 .card.luxury button {
   color: var(--primary-3);
 }
-@media (min-width: 700px) {
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  body {
+    width: 100%;
+  }
+
+  main {
+    flex-direction: row;
+  }
+  .card {
+    padding: 20px;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1000px) {
   body {
     width: 100%;
   }
@@ -115,6 +130,7 @@ main {
     margin-top: 0;
   }
   .card {
+    padding: 40px;
     width: 18%;
     height: min-height;
   }
