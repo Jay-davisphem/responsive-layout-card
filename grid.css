@@ -97,8 +97,10 @@ main {
 }
 .card.sedans button {
   color: var(--primary-1);
+  margin-top: 70px;
 }
 .card.suvs button {
+  margin-top: 70px;
   color: var(--primary-2);
 }
 .card.luxury button {
