@@ -74,7 +74,7 @@ main {
   font-size: 1rem;
   background: var(--neutral);
   border: none;
-  padding: 10px 30px 5px;
+  padding: 10px 30px 10px;
   border-radius: 25px;
   vertical-align: middle;
   cursor: pointer;
