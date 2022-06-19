@@ -67,6 +67,7 @@ main {
 
 .card p {
   font-size: 1rem;
+  height: 100px;
 }
 .card button {
   outline: none;
@@ -97,10 +98,8 @@ main {
 }
 .card.sedans button {
   color: var(--primary-1);
-  margin-top: 70px;
 }
 .card.suvs button {
-  margin-top: 70px;
   color: var(--primary-2);
 }
 .card.luxury button {
